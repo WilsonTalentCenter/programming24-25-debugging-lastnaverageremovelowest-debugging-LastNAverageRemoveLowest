@@ -53,7 +53,7 @@ public class Main {
      * @param dropCount number of the lowest scores to drop from group of last scores.
      * @return the average or -1 if {@code dropCount} >= {@code numScoresToAverage}
      */
-    static double calculateAverage(List<Integer> scores, int numScoresToAverage, int dropCount) {
+    static  calculateAverage(List<Integer> scores, int numScoresToAverage, int dropCount) {
         //create a new list to hold scores to actually include in average
         List<Integer> scoresToInclude = new ArrayList<>();
 
@@ -90,7 +90,7 @@ public class Main {
      * @param prompt message to display to the user
      * @return the valid integer entered
      */
-    static int getPositiveInt(Scanner scanner,String prompt){
+    static int getPositiveInt(Scanner scanner,String prompt)
         while(true) {
             try {
                 System.out.println(prompt);
